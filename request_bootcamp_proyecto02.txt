@@ -1,0 +1,39 @@
+
+
+curl --location 'localhost:8086/login/save' \
+--header 'Content-Type: application/json' \
+--data '{
+    "numTrajeta": "4338940623822923",
+    "fecVencimiento": "2023-10-01",
+    "codValidacion": "654",
+    "tipoCliente": "1",
+    "numDocumento": "78945612",
+    "pinTarjeta":"123456"
+}'
+
+
+
+curl --location --request PUT 'localhost:8086/login/update' \
+--header 'Content-Type: application/json' \
+--data '{
+    "idTrget": "63efd688a0febd48e70fb72c",
+    "numberTarget": "4338940623822924",
+    "passwordSesion": "123456",
+    "pinTarjeta": "123456"
+}'
+
+
+curl --location 'localhost:8086/login-session/inicio' \
+--header 'Content-Type: application/json' \
+--data '{
+    "numTarget": "4338940623822923",
+    "password": "siB^I*"
+}'
+
+
+curl --location 'localhost:8086/auditoria'
+
+
+OPEN API
+
+http://localhost:8086/q/swagger-ui/
