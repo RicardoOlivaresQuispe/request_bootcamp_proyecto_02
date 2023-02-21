@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "173d723f-622e-40ba-a2a1-81c96c48fefd",
+		"name": "Request proyecto 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buscar cuenta bancaria con sus movimientosa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/cuenta-bancaria/movimiento-cuenta-bancaria?numeroCuenta=12345698796331",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuenta-bancaria",
+						"movimiento-cuenta-bancaria"
+					],
+					"query": [
+						{
+							"key": "numeroCuenta",
+							"value": "12345698796331"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar movimientos de una Cuenta bancaria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/cuenta-bancaria-movimiento?numeroCuenta=12345698796331",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"cuenta-bancaria-movimiento"
+					],
+					"query": [
+						{
+							"key": "numeroCuenta",
+							"value": "12345698796331"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar credito con sus movimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/credito/movimiento-credito?numeroCredito=98765432987654",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"credito",
+						"",
+						"movimiento-credito"
+					],
+					"query": [
+						{
+							"key": "numeroCredito",
+							"value": "98765432987654"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar pagos de una tarjeta de credito o un credito",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/pago-credito?numeroCuenta=86427894561258",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"pago-credito"
+					],
+					"query": [
+						{
+							"key": "numeroCuenta",
+							"value": "86427894561258"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar cargos de una tarjeta de credito",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/tarjeta-credito-cargo?numeroCuenta=86427894561258",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"tarjeta-credito-cargo"
+					],
+					"query": [
+						{
+							"key": "numeroCuenta",
+							"value": "86427894561258"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar tarjeta de credito con sus movimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/tarjeta/movimiento-tarjeta-credito?numeroTarjeta=9874561231472502",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"tarjeta",
+						"movimiento-tarjeta-credito"
+					],
+					"query": [
+						{
+							"key": "numeroTarjeta",
+							"value": "9874561231472502"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente - health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/q/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"q",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente - openapi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/q/openapi?format=json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"q",
+						"openapi"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
